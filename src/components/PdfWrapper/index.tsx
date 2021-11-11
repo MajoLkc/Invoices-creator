@@ -9,10 +9,11 @@ const PdfWrapper = styled.div`
 `
 
 const Bordering = styled.div`
-  width: 185mm;
-  height: 272mm;
+  width: 190mm;
+  height: 277mm;
   margin: 10mm;
   border: 2px solid black;
+  position: relative;
 `
 
 const Wrapper = (props: any) => {
