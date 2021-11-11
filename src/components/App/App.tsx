@@ -3,12 +3,16 @@ import React from "react"
 import Pdf from "react-to-pdf"
 import styled from "styled-components"
 import Invoice from "../Invoice"
+import configData from "../../config.json"
+
+const paperWidth = configData.sizes.A4.width
+const paperHeight = configData.sizes.A4.height
 
 const PdfWrapper = styled.div`
   margin: 0px auto;
   background-color: yellow;
-  width: 210mm;
-  height: 297mm;
+  width: ${paperWidth};
+  height: ${paperHeight};
   display: flex;
 `
 
