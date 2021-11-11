@@ -1,10 +1,5 @@
 import styled from "styled-components"
-
-const Header = styled.div`
-  background-color: red;
-  width: 100%;
-  height: 35px;
-`
+import Header from "./Header"
 
 const Creator = styled.div`
   background-color: green;
