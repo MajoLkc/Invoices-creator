@@ -1,6 +1,6 @@
 import i18NextInstance, { InitOptions } from 'i18next'
 import { initReactI18next } from 'react-i18next'
-import en from './sk-SK'
+import en from './en-GB'
 import sk from './sk-SK'
 
 const debug = process.env.NODE_ENV === 'development'
