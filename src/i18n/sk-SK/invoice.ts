@@ -2,6 +2,10 @@
 export default {
   Invoice: "Faktúra",
   Provider: {
+    ID: "IČO",
+    VAT1: "DIČ",
+    VAT2: "IČDPH",
+    VATnonPayer: "Neplatca DPH",
     Account: "Účet",
     Bank: "Banka",
     IBAN: "IBAN",

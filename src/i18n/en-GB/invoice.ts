@@ -2,6 +2,10 @@
 export default {
     Invoice: "Invoice",
     Provider: {
+      ID: "ID",
+      VAT1: "VAT",
+      VAT2: "VAT",
+      VATnonPayer: "VAT non-payer",
       Account: "Account",
       Bank: "Bank",
       IBAN: "IBAN",
