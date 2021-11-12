@@ -1,12 +1,6 @@
 import styled from "styled-components"
 import Header from "./Header"
-
-const Creator = styled.div`
-  background-color: green;
-  width: 45%;
-  height: 260px;
-  display: inline-block;
-`
+import Provider from './Provider'
 
 const Client = styled.div`
   background-color: blue;
@@ -47,7 +41,7 @@ const Invoice = () => {
   return (
     <>
       <Header />
-      <Creator />
+      <Provider />
       <Client />
       <Dates />
       <Items />
