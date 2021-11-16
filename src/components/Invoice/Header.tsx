@@ -1,6 +1,6 @@
-import { Typography } from "antd"
 import styled from "styled-components"
 import { useTranslation } from "react-i18next"
+import MainText from "../MainText"
 
 const Box = styled.div`
   margin: 0;
@@ -11,20 +11,12 @@ const Box = styled.div`
   justify-content: space-between;
 `
 
-const { Title } = Typography
-
-const TitleText = styled(Title)`
-  margin: 1px;
-  font-weight: normal;
-  text-transform: uppercase;
-`
-
 const Header = () => {
   const { t } = useTranslation(["invoice"])
   return (
     <Box>
-      <TitleText level={2}>{t("Invoice")}</TitleText>
-      <TitleText level={2}>FA001</TitleText>
+      <MainText isUppercase={true} level={2}>{t("Invoice")}</MainText>
+      <MainText isUppercase={true} level={2}>fa001</MainText>
     </Box>
   )
 }

@@ -1,19 +1,13 @@
-import { Table, Typography } from "antd"
+import { Table } from "antd"
 import styled from "styled-components"
 import { useTranslation } from "react-i18next"
 import { useState } from "react"
+import MainText from "../MainText"
 
 const Box = styled.div`
   width: 45%;
   height: 260px;
   display: inline-block;
-`
-
-const { Title } = Typography
-
-const TitleText = styled(Title)`
-  margin: 1px;
-  font-weight: normal;
 `
 
 const Provider = () => {
@@ -51,9 +45,9 @@ const Provider = () => {
   ]
   return (
     <Box>
-      <TitleText level={2}>Meno firmy</TitleText>
-      <TitleText level={3}>Ulica 290/85</TitleText>
-      <TitleText level={3}>038 52 Kosice</TitleText>
+      <MainText level={2}>Meno firmy</MainText>
+      <MainText level={3}>Ulica 290/85</MainText>
+      <MainText level={3}>038 52 Kosice</MainText>
       <Table
         dataSource={personData}
         columns={personColumns}
