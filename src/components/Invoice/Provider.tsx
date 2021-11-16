@@ -1,8 +1,8 @@
-import { Table } from "antd"
 import styled from "styled-components"
 import { useTranslation } from "react-i18next"
 import { useState } from "react"
 import MainText from "../MainText"
+import BasicTable from "../BasicTable"
 
 const Box = styled.div`
   width: 45%;
@@ -48,17 +48,13 @@ const Provider = () => {
       <MainText level={2}>Meno firmy</MainText>
       <MainText level={3}>Ulica 290/85</MainText>
       <MainText level={3}>038 52 Kosice</MainText>
-      <Table
-        dataSource={personData}
+      <BasicTable
+        data={personData}
         columns={personColumns}
-        pagination={false}
-        showHeader={false}
       />
-      <Table
-        dataSource={accountData}
+      <BasicTable
+        data={accountData}
         columns={personColumns}
-        pagination={false}
-        showHeader={false}
       />
     </Box>
   )
