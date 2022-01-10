@@ -9,8 +9,6 @@ interface TextProps {
   label: string
 }
 
-const SmallText = (props: TextProps) => {
-  return <Text>{props.label}</Text>
-}
+const SmallText = (props: TextProps) => <Text>{props.label}</Text>
 
 export default SmallText
