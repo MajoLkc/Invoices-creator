@@ -15,12 +15,10 @@ const TitleText = styled(Title)<TextProps>`
   text-transform: ${(props) => (props.isUppercase ? "uppercase" : null)};
 `
 
-const MainText = ({ children, level, isUppercase }: TextProps) => {
-  return (
-    <TitleText isUppercase={isUppercase} level={level}>
-      {children}
-    </TitleText>
-  )
-}
+const MainText = ({ children, level, isUppercase }: TextProps) => (
+  <TitleText isUppercase={isUppercase} level={level}>
+    {children}
+  </TitleText>
+)
 
 export default MainText

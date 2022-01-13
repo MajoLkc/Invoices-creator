@@ -16,12 +16,10 @@ const Bordering = styled.div`
   position: relative;
 `
 
-const Wrapper = (props: any) => {
-  return (
-    <PdfWrapper>
-      <Bordering>{props.children}</Bordering>
-    </PdfWrapper>
-  )
-}
+const Wrapper = (props: any) => (
+  <PdfWrapper>
+    <Bordering>{props.children}</Bordering>
+  </PdfWrapper>
+)
 
 export default Wrapper
