@@ -26,21 +26,21 @@ const Provider = () => {
     },
   ]
   const personData = [
-    { key: "1", name: t("Provider.ID"), number: 44111122 },
-    { key: "2", name: t("Provider.VAT1"), number: 44111122 },
+    { key: "1", name: t("Provider.ID"), value: 44111122 },
+    { key: "2", name: t("Provider.VAT1"), value: 44111122 },
     {
       key: "3",
       name: vatPayer ? t("Provider.VAT2") : t("Provider.VATnonPayer"),
-      number: vatPayer ? 44111122 : null,
+      value: vatPayer ? 44111122 : "",
     },
   ]
   const accountData = [
-    { key: "1", name: t("Provider.Account"), number: 2195894843134861445 },
-    { key: "2", name: t("Provider.Bank"), number: "Taktra banka, a.s." },
+    { key: "1", name: t("Provider.Account"), value: 2195894843134861445 },
+    { key: "2", name: t("Provider.Bank"), value: "Taktra banka, a.s." },
     {
       key: "3",
       name: t("Provider.IBAN"),
-      number: "SK75006000000001211589641",
+      value: "SK75006000000001211589641",
     },
   ]
   return (
