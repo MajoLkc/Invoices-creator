@@ -10,7 +10,7 @@ const Box = styled.div`
   display: inline-block;
 `
 
-const Provider = () => {
+const Provider: React.FC = () => {
   const [vatPayer, setVatPayer] = useState(false)
   const { t } = useTranslation(["invoice"])
   const personColumns = [
@@ -48,14 +48,8 @@ const Provider = () => {
       <MainText level={2}>Meno firmy</MainText>
       <MainText level={3}>Ulica 290/85</MainText>
       <MainText level={3}>038 52 Kosice</MainText>
-      <BasicTable
-        data={personData}
-        columns={personColumns}
-      />
-      <BasicTable
-        data={accountData}
-        columns={personColumns}
-      />
+      <BasicTable data={personData} columns={personColumns} />
+      <BasicTable data={accountData} columns={personColumns} />
     </Box>
   )
 }

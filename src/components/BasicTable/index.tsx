@@ -13,7 +13,7 @@ type TableProps = {
   }[]
 }
 
-const BasicTable = ({ data, columns }: TableProps) => (
+const BasicTable: React.FC<TableProps> = ({ data, columns }) => (
   <Table
     pagination={false}
     showHeader={false}

@@ -19,7 +19,7 @@ const HeadBox = styled.div`
   border-left: 2px solid black;
 `
 
-const Client = () => {
+const Client: React.FC = () => {
   const { t } = useTranslation(["invoice"])
   const columns = [
     {
@@ -59,7 +59,7 @@ const Client = () => {
           showHeader={false}
         />
       </HeadBox>
-      <SmallText label={t("Footer.Client")}/>
+      <SmallText label={t("Footer.Client")} />
     </Box>
   )
 }

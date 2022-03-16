@@ -11,12 +11,16 @@ const Box = styled.div`
   justify-content: space-between;
 `
 
-const Header = () => {
+const Header: React.FC = () => {
   const { t } = useTranslation(["invoice"])
   return (
     <Box>
-      <MainText isUppercase={true} level={2}>{t("Invoice")}</MainText>
-      <MainText isUppercase={true} level={2}>fa001</MainText>
+      <MainText isUppercase={true} level={2}>
+        {t("Invoice")}
+      </MainText>
+      <MainText isUppercase={true} level={2}>
+        fa001
+      </MainText>
     </Box>
   )
 }

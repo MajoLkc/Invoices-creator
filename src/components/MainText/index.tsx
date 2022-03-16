@@ -15,7 +15,7 @@ const TitleText = styled(Title)<TextProps>`
   text-transform: ${(props) => (props.isUppercase ? "uppercase" : null)};
 `
 
-const MainText = ({ children, level, isUppercase }: TextProps) => (
+const MainText: React.FC<TextProps> = ({ children, level, isUppercase }) => (
   <TitleText isUppercase={isUppercase} level={level}>
     {children}
   </TitleText>

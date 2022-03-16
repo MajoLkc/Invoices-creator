@@ -5,10 +5,10 @@ const Text = styled.p`
   margin: 2px;
 `
 
-interface TextProps {
+type TextProps = {
   label: string
 }
 
-const SmallText = (props: TextProps) => <Text>{props.label}</Text>
+const SmallText: React.FC<TextProps> = ({ label }) => <Text>{label}</Text>
 
 export default SmallText

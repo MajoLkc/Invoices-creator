@@ -31,7 +31,7 @@ const Footer = styled.div`
   bottom: 0;
 `
 
-const Invoice = () => (
+const Invoice: React.FC = () => (
   <>
     <Header />
     <Provider />

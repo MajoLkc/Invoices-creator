@@ -16,7 +16,7 @@ const Bordering = styled.div`
   position: relative;
 `
 
-const Wrapper = (props: any) => (
+const Wrapper:React.FC = (props) => (
   <PdfWrapper>
     <Bordering>{props.children}</Bordering>
   </PdfWrapper>
