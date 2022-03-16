@@ -1,6 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
   Invoice: "Faktúra",
+  GenerateButton: "Vytvor faktúru v PDF",
   Provider: {
     ID: "IČO",
     VAT1: "DIČ",
@@ -41,6 +42,6 @@ export default {
     Client: "Klient",
     Deposits: "Uhradené zálohami",
     Balance: "Zostáva uhradiť",
-    ToPay: "K úhrade"
+    ToPay: "K úhrade",
   },
 }
