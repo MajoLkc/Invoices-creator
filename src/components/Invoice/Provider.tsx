@@ -20,9 +20,9 @@ const Provider = () => {
       key: "name",
     },
     {
-      title: "number",
-      dataIndex: "number",
-      key: "number",
+      title: "Value",
+      dataIndex: "value",
+      key: "value",
     },
   ]
   const personData = [
@@ -36,7 +36,7 @@ const Provider = () => {
   ]
   const accountData = [
     { key: "1", name: t("Provider.Account"), value: 2195894843134861445 },
-    { key: "2", name: t("Provider.Bank"), value: "Taktra banka, a.s." },
+    { key: "2", name: t("Provider.Bank"), value: "Tatra banka, a.s." },
     {
       key: "3",
       name: t("Provider.IBAN"),
