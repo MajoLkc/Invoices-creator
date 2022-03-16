@@ -6,7 +6,7 @@ const Box = styled.div`
   margin: 0;
   padding: 0;
   height: 30px;
-  border: 3px solid black;
+  border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
 `
