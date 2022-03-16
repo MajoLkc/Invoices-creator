@@ -1,13 +1,7 @@
 import styled from "styled-components"
 import Header from "./Header"
-import Provider from './Provider'
-
-const Client = styled.div`
-  background-color: blue;
-  width: 55%;
-  height: 260px;
-  display: inline-block;
-`
+import Provider from "./Provider"
+import Client from "./Client"
 
 const Dates = styled.div`
   background-color: brown;
@@ -37,18 +31,16 @@ const Footer = styled.div`
   bottom: 0;
 `
 
-const Invoice = () => {
-  return (
-    <>
-      <Header />
-      <Provider />
-      <Client />
-      <Dates />
-      <Items />
-      <QRcode />
-      <Footer />
-    </>
-  )
-}
+const Invoice = () => (
+  <>
+    <Header />
+    <Provider />
+    <Client />
+    <Dates />
+    <Items />
+    <QRcode />
+    <Footer />
+  </>
+)
 
 export default Invoice
