@@ -1,4 +1,11 @@
 import { Table } from "antd"
+import styled from "styled-components"
+
+const StyledTable = styled(Table)`
+  td:first-child {
+    font-size: 13px;
+  }
+`
 
 type TableProps = {
   data: {
@@ -14,7 +21,7 @@ type TableProps = {
 }
 
 const BasicTable: React.FC<TableProps> = ({ data, columns }) => (
-  <Table
+  <StyledTable
     pagination={false}
     showHeader={false}
     columns={columns}

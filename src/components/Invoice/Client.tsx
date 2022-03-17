@@ -1,7 +1,7 @@
-import { Table } from "antd"
 import styled from "styled-components"
 import { useTranslation } from "react-i18next"
 import SmallText from "../SmallText"
+import BasicTable from "../BasicTable"
 
 const Box = styled.div`
   width: 55%;
@@ -44,19 +44,15 @@ const Client: React.FC = () => {
   return (
     <Box>
       <HeadBox>
-        <Table
-          dataSource={paymentData}
+        <BasicTable
+          data={paymentData}
           columns={columns}
-          pagination={false}
-          showHeader={false}
         />
       </HeadBox>
       <HeadBox>
-        <Table
-          dataSource={symbolsData}
+        <BasicTable
+          data={symbolsData}
           columns={columns}
-          pagination={false}
-          showHeader={false}
         />
       </HeadBox>
       <SmallText label={t("Footer.Client")} />
