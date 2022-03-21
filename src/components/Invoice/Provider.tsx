@@ -1,13 +1,14 @@
 import styled from "styled-components"
 import { useTranslation } from "react-i18next"
 import { useState } from "react"
-import MainText from "../MainText"
 import BasicTable from "../BasicTable"
+import Address from "../Address"
 
 const Box = styled.div`
   width: 45%;
   height: 260px;
   display: inline-block;
+  vertical-align: top;
 `
 
 const Provider: React.FC = () => {
@@ -45,9 +46,19 @@ const Provider: React.FC = () => {
   ]
   return (
     <Box>
-      <MainText level={2}>Meno firmy</MainText>
-      <MainText level={3}>Ulica 290/85</MainText>
-      <MainText level={3}>038 52 Kosice</MainText>
+    {/* <MainText level={2}>Meno firmy</MainText>
+    <MainText level={3}>Ulica 290/85</MainText>
+    <MainText level={3}>038 52 Kosice</MainText> */}
+      {/* <span>Meno firmy</span>
+      <span>Meno firmy</span>
+      <span>038 52 Kosice</span> */}
+      <Address
+        name="Meno Firmy"
+        street="Ulica"
+        houseNumber={259}
+        postalCode="033 22"
+        city="Kosice"
+      />
       <BasicTable data={personData} columns={personColumns} />
       <BasicTable data={accountData} columns={personColumns} />
     </Box>
