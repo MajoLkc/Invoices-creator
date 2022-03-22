@@ -2,12 +2,7 @@ import styled from "styled-components"
 import Header from "./Header"
 import Provider from "./Provider"
 import Client from "./Client"
-
-const Dates = styled.div`
-  background-color: brown;
-  width: 100%;
-  height: 60px;
-`
+import Dates from "./Dates"
 
 const Items = styled.div`
   background-color: purple;
