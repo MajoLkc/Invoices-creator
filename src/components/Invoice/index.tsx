@@ -3,12 +3,7 @@ import Header from "./Header"
 import Provider from "./Provider"
 import Client from "./Client"
 import Dates from "./Dates"
-
-const Items = styled.div`
-  background-color: purple;
-  width: 100%;
-  min-height: 60px;
-`
+import Items from "./Items"
 
 const QRcode = styled.div`
   background-color: orange;
