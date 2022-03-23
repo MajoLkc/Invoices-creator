@@ -12,9 +12,9 @@ const Items: React.FC = () => {
     {
       key: 1,
       description: "Auto",
-      amount: 9,
+      amount: 1,
       measureUnit: "kus",
-      price: 5000,
+      price: 4390,
     },
     {
       key: 2,
@@ -26,27 +26,35 @@ const Items: React.FC = () => {
     {
       key: 3,
       description: "Kolesa",
-      amount: 25,
+      amount: 4,
       measureUnit: "kus",
       price: 50,
     },
   ]
 
+  let totalInvoicePrice = 0
+
   const mappedData = DUMMY_DATA.map((item) => {
     const { key, description, amount, measureUnit, price } = item
+    const itemTotalPrice = price * amount
+    totalInvoicePrice = totalInvoicePrice + itemTotalPrice
     return {
       key,
       description,
       amount,
       measureUnit,
       price,
-      total: price * amount,
+      total: itemTotalPrice,
     }
   })
 
   return (
     <Box>
-      <ItemsTable measureUnit="kus" data={mappedData} />
+      <ItemsTable
+        measureUnit="kus"
+        data={mappedData}
+        totalPrice={totalInvoicePrice}
+      />
     </Box>
   )
 }

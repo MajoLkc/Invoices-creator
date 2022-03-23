@@ -7,7 +7,8 @@ const StyledTable = styled(Table)`
   thead {
     text-align: left;
   }
-  th, td {
+  th,
+  td {
     padding: 2px 5px;
   }
   th:first-of-type {
@@ -25,9 +26,14 @@ type TableProps = {
     total: number
   }[]
   measureUnit: string
+  totalPrice: number
 }
 
-const ItemsTable: React.FC<TableProps> = ({ data, measureUnit }) => {
+const ItemsTable: React.FC<TableProps> = ({
+  data,
+  measureUnit,
+  totalPrice,
+}) => {
   const { t } = useTranslation(["invoice"])
   const columns = [
     {
@@ -62,7 +68,19 @@ const ItemsTable: React.FC<TableProps> = ({ data, measureUnit }) => {
       pagination={false}
       columns={columns}
       dataSource={data}
-      // tableLayout="fixed"
+      summary={() => (
+        <Table.Summary fixed>
+          <Table.Summary.Row>
+            <Table.Summary.Cell index={0}>
+              {t("Items.Total")}
+            </Table.Summary.Cell>
+            <Table.Summary.Cell index={1}></Table.Summary.Cell>
+            <Table.Summary.Cell index={2}></Table.Summary.Cell>
+            <Table.Summary.Cell index={3}></Table.Summary.Cell>
+            <Table.Summary.Cell index={4}>{totalPrice}</Table.Summary.Cell>
+          </Table.Summary.Row>
+        </Table.Summary>
+      )}
     />
   )
 }
