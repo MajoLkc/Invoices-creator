@@ -4,14 +4,7 @@ import Provider from "./Provider"
 import Client from "./Client"
 import Dates from "./Dates"
 import Items from "./Items"
-
-const QRcode = styled.div`
-  background-color: orange;
-  width: 150px;
-  min-height: 150px;
-  position: absolute;
-  right: 0;
-`
+import QRcode from './QRcode'
 
 const Footer = styled.div`
   background-color: pink;
