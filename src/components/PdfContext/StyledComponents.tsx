@@ -6,7 +6,6 @@ const paperHeight = configData.sizes.A4.height
 
 export const PdfWrapper = styled.div`
   margin: 0px auto;
-  background-color: yellow;
   width: ${paperWidth};
   height: ${paperHeight};
   display: flex;

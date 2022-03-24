@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 const PdfWrapper = styled.div`
   margin: 0px auto;
-  background-color: yellow;
   width: 210mm;
   height: 297mm;
   display: flex;

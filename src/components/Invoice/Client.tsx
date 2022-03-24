@@ -9,7 +9,6 @@ const Box = styled.div`
   width: 55%;
   height: 260px;
   display: inline-block;
-  background-color: white;
 `
 
 const HeadBox = styled.div`
