@@ -2,11 +2,12 @@ import styled from "styled-components"
 import qr_code from "../../assets/images/qr_code.png"
 
 const Box = styled.div`
-  background-color: orange;
   width: 160px;
   min-height: 150px;
   position: absolute;
   right: 0;
+  bottom: 0;
+  margin: 0 10px 135px 0;
 `
 
 const Image = styled.img`
