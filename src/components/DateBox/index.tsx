@@ -9,7 +9,6 @@ const Box = styled.div`
 
 const DateWrapper = styled.div`
   width: 70%;
-  background-color: white;
   text-align: center;
   margin: 2px 0 2px 29%;
   font-size: 18px;

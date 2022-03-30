@@ -24,7 +24,6 @@ const HeadBox = styled.div`
 const ClientBox = styled.div`
   width: 90%;
   height: 70%;
-  background-color: red;
   margin: 0px auto;
 `
 
