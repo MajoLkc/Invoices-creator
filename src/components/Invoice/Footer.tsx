@@ -5,8 +5,10 @@ import Price from "../Price"
 import SmallText from "../SmallText"
 
 const FooterWrapper = styled.div`
-  width: 100%;
+  width: 100.3%;
   height: 130px;
+  border-top: 1px solid black;
+  margin: 0 -1px;
   position: absolute;
   bottom: 0;
   display: flex;
@@ -16,7 +18,7 @@ const FooterWrapper = styled.div`
 const FooterBox = styled.div`
   width: 33.3%;
   border-right: 1px solid black;
-  border-top: 1px solid black;
+  margin: -1px 0;
 `
 
 const PricesWrapper = styled.div`
@@ -25,6 +27,7 @@ const PricesWrapper = styled.div`
   line-height: 20px;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  margin-right: -1px;
   font-size: 13px;
 `
 

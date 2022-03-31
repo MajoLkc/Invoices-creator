@@ -7,6 +7,7 @@ import Address from "../Address"
 const Box = styled.div`
   width: 45%;
   height: 260px;
+  border-right: 1px solid black;
   display: inline-block;
   vertical-align: top;
 `

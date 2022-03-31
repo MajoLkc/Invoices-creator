@@ -3,12 +3,12 @@ import { useTranslation } from "react-i18next"
 import MainText from "../MainText"
 
 const Box = styled.div`
-  margin: 0;
+  margin: 0 -1px;
   padding: 0;
   height: 30px;
-  border-bottom: 2px solid black;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid black;
 `
 
 const Header: React.FC = () => {

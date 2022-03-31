@@ -3,10 +3,12 @@ import styled from "styled-components"
 import DateBox from "../DateBox"
 
 const Box = styled.div`
-  width: 100%;
   height: 60px;
+  margin: 0 -1px;
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 `
 
 const Dates: React.FC = () => {

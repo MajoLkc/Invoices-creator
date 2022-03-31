@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 const Box = styled.div`
   width: 33.3%;
+  margin-bottom: -1px;
   border-right: 1px solid black;
-  border-bottom: 1px solid black;
 `
 
 const DateWrapper = styled.div`

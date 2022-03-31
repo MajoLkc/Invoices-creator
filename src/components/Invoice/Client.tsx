@@ -9,16 +9,18 @@ const Box = styled.div`
   width: 55%;
   height: 260px;
   display: inline-block;
+  margin-left: -1px;
 `
 
 const HeadBox = styled.div`
   margin: 0;
   padding: 0;
-  width: 48.98%;
+  width: 50%;
   height: 50px;
+  margin-right: -1px;
   display: inline-block;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 `
 
 const ClientBox = styled.div`
