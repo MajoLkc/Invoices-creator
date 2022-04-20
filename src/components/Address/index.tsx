@@ -12,6 +12,11 @@ type TextProps = {
   city: string
 }
 
+const StyledSpace = styled(Space)`
+  display: block;
+  margin: 0 3px;
+`
+
 const NameText = styled(Text)`
   margin: 1px;
   font-size: 22px;
@@ -30,11 +35,11 @@ const Address: React.FC<TextProps> = ({
   postalCode,
   city,
 }) => (
-  <Space>
+  <StyledSpace>
     <NameText>{`${name} ${surname !== undefined ? surname : ""}`}</NameText>
     <AddressText>{`${street} ${houseNumber}`}</AddressText>
     <AddressText>{`${postalCode} ${city}`}</AddressText>
-  </Space>
+  </StyledSpace>
 )
 
 export default Address

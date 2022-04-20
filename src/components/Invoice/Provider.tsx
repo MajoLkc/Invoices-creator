@@ -47,12 +47,6 @@ const Provider: React.FC = () => {
   ]
   return (
     <Box>
-    {/* <MainText level={2}>Meno firmy</MainText>
-    <MainText level={3}>Ulica 290/85</MainText>
-    <MainText level={3}>038 52 Kosice</MainText> */}
-      {/* <span>Meno firmy</span>
-      <span>Meno firmy</span>
-      <span>038 52 Kosice</span> */}
       <Address
         name="Meno Firmy"
         street="Ulica"
