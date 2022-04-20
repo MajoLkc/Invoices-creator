@@ -1,24 +1,19 @@
-import { Typography } from "antd"
 import styled from "styled-components"
-
-const { Title } = Typography
 
 type TextProps = {
   children: string
-  level: 1 | 2 | 3 | 4 | 5
   isUppercase?: boolean
 }
 
-const TitleText = styled(Title)<TextProps>`
-  margin: 1px;
-  font-weight: normal;
+const TitleText = styled.span<TextProps>`
+  margin: 0px 3px;
+  font-size: 17px;
+  font-weight: 600;
   text-transform: ${(props) => (props.isUppercase ? "uppercase" : null)};
 `
 
-const MainText: React.FC<TextProps> = ({ children, level, isUppercase }) => (
-  <TitleText isUppercase={isUppercase} level={level}>
-    {children}
-  </TitleText>
+const MainText: React.FC<TextProps> = ({ children, isUppercase }) => (
+  <TitleText isUppercase={isUppercase}>{children}</TitleText>
 )
 
 export default MainText
