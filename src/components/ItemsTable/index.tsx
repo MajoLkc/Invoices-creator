@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next"
 import styled from "styled-components"
 
 const StyledTable = styled(Table)`
-  width: 100%;
+  margin: 10px 25px;
+  border: 1px solid;
   thead {
     text-align: left;
   }

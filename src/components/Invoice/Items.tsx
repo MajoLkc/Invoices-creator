@@ -2,9 +2,7 @@ import styled from "styled-components"
 import ItemsTable from "../ItemsTable"
 
 const Box = styled.div`
-  background-color: white;
   width: 100%;
-  min-height: 60px;
 `
 
 const Items: React.FC = () => {
