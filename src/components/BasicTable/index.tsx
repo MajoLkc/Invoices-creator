@@ -2,8 +2,15 @@ import { Table } from "antd"
 import styled from "styled-components"
 
 const StyledTable = styled(Table)`
+  margin: 3px;
+  .ant-table {
+    line-height: 0.3;
+  }
+  .ant-table-tbody > tr > td {
+    border-bottom: none;
+  }
   td:first-child {
-    font-size: 13px;
+    font-size: 10px;
   }
 `
 
@@ -22,6 +29,7 @@ type TableProps = {
 
 const BasicTable: React.FC<TableProps> = ({ data, columns }) => (
   <StyledTable
+    size="small"
     pagination={false}
     showHeader={false}
     columns={columns}
