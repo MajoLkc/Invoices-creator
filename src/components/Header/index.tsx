@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import {
   PageHeader,
   Tabs,
@@ -8,8 +7,9 @@ import {
   Menu,
   Dropdown,
 } from "antd"
-import { MoreOutlined, TranslationOutlined, UnorderedListOutlined } from "@ant-design/icons"
+import { UnorderedListOutlined } from "@ant-design/icons"
 import i18next from "i18next"
+import { useTranslation } from "react-i18next"
 
 const { TabPane } = Tabs
 
@@ -41,7 +41,6 @@ const DropdownMenu = () => (
   <Dropdown key="more" overlay={menu} placement="bottomRight">
     <Button
       type="text"
-    //   icon={<TranslationOutlined style={{ fontSize: 20 }} />}
       icon={<UnorderedListOutlined style={{ fontSize: 20 }} />}
     />
   </Dropdown>
@@ -88,6 +87,7 @@ const Content = ({ children, extra }: any) => (
 )
 
 const Header: React.FC = () => {
+  const { t } = useTranslation(["form"])
   return (
     <PageHeader
       className="site-page-header-responsive"
@@ -104,8 +104,8 @@ const Header: React.FC = () => {
       ]}
       footer={
         <Tabs defaultActiveKey="1">
-          <TabPane tab="Details" key="1" />
-          <TabPane tab="Rule" key="2" />
+          <TabPane tab={t("Form")} key="1" />
+          <TabPane tab={t("Invoice")} key="2" />
         </Tabs>
       }
     >
