@@ -69,6 +69,7 @@ const ItemsTable: React.FC<TableProps> = ({
       pagination={false}
       columns={columns}
       dataSource={data}
+      size="small"
       summary={() => (
         <Table.Summary fixed>
           <Table.Summary.Row>
